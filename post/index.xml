@@ -19,14 +19,5 @@ Install Hugo Easy for macos. Make sure that you have installed brew.
 brew install hugo Create local website Be familiar with the commands of Hugo.</description>
     </item>
     
-    <item>
-      <title>First</title>
-      <link>https://Grant-S-Z.github.io/GrantSite/post/first/</link>
-      <pubDate>Thu, 22 Jun 2023 13:11:45 +0800</pubDate>
-      
-      <guid>https://Grant-S-Z.github.io/GrantSite/post/first/</guid>
-      <description>Hello A test.</description>
-    </item>
-    
   </channel>
 </rss>
