@@ -1,4 +1,36 @@
 baseURL: 'https://Grant-S-Z.github.io/GrantSite/'
 languageCode: en-us
-title: My New Hugo Site
+title: Hi Grant
 theme: PaperMod
+
+params:
+    homeInfoParams:
+        Title: 'Welcome'
+        Content: 'True mastery of any skill takes a lifetime.'
+
+    socialIcons:
+        - name: github
+          url: 'https://www.github.com/Grant-S-Z'
+
+    cover:
+        linkFullImages: true
+
+    ShowBreadCrumbs: true
+    ShowReadingTime: true
+    ShowShareButtons: true
+    ShowPostNavLinks: true
+
+menu:
+    main:
+        - identifier: categories
+          name: Categories
+          url: /categories/
+          weight: 10
+        - identifier: tags
+          name: Tags
+          url: /tags/
+          weight: 20
+        - identifier: archives
+          name: Archives
+          url: /archives/
+          weight: 30
