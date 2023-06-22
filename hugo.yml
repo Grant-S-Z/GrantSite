@@ -1,0 +1,4 @@
+baseURL: 'https://Grant-S-Z.github.io/GrantSite/'
+languageCode: en-us
+title: My New Hugo Site
+theme: PaperMod
