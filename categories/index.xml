@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Categories on My New Hugo Site</title>
+    <title>Categories on Hi Grant</title>
     <link>https://Grant-S-Z.github.io/GrantSite/categories/</link>
-    <description>Recent content in Categories on My New Hugo Site</description>
+    <description>Recent content in Categories on Hi Grant</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://Grant-S-Z.github.io/GrantSite/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Thu, 22 Jun 2023 13:11:45 +0800</lastBuildDate><atom:link href="https://Grant-S-Z.github.io/GrantSite/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>diary</title>
+      <link>https://Grant-S-Z.github.io/GrantSite/categories/diary/</link>
+      <pubDate>Thu, 22 Jun 2023 13:11:45 +0800</pubDate>
+      
+      <guid>https://Grant-S-Z.github.io/GrantSite/categories/diary/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
