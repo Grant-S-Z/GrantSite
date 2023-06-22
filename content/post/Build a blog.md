@@ -1,8 +1,8 @@
 +++
 title = "Build a blog"
 author = ["Grant"]
-lastmod = 2023-06-22T14:49:12+08:00
-tags = ["hugo", "blog"]
+lastmod = 2023-06-22T15:13:04+08:00
+tags = ["hugo"]
 categories = ["cs"]
 draft = false
 +++
