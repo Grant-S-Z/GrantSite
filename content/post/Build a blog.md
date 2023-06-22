@@ -1,7 +1,7 @@
 +++
 title = "Build a blog"
 author = ["Grant"]
-lastmod = 2023-06-22T15:13:04+08:00
+lastmod = 2023-06-22T17:31:29+08:00
 tags = ["hugo"]
 categories = ["cs"]
 draft = false
@@ -11,7 +11,7 @@ draft = false
 
 I wanna build my own blog for a long time. Long ago, I have heard about Hugo, which is a convenient tool to build a static website quickly.
 
-Following the [course](https://www.youtube.com/watch?v=hjD9jTi_DQ4&list=PLeiDFxcsdhUrzkK5Jg9IZyiTsIMvXxKZP&index=2) of Youtube, I have probably finished it today, and take a record for it now.
+Following the [course](https://www.youtube.com/watch?v=hjD9jTi_DQ4&list=PLeiDFxcsdhUrzkK5Jg9IZyiTsIMvXxKZP&index=2) of Youtube, I have probably finished it, and take a record for it now.
 
 
 ### Install Hugo {#install-hugo}
@@ -112,3 +112,10 @@ jobs:
 ```
 
 After that, you can see your website. For me, here's [it](https://grant-s-z.github.io/GrantSite/).
+
+
+## How to use Emacs to write blogs? {#how-to-use-emacs-to-write-blogs}
+
+You need two packages: easy-hugo and ox-hugo.
+
+Just use Emacs to install them, and it is easy to manage your blogs now.
