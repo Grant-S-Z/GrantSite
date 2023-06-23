@@ -1,8 +1,8 @@
 +++
 title = "Build a blog"
 author = ["Grant"]
-lastmod = 2023-06-22T18:12:23+08:00
-tags = ["hugo", "emacs"]
+lastmod = 2023-11-21T14:12:38+08:00
+tags = ["Emacs", "hugo"]
 categories = ["cs"]
 draft = false
 +++
@@ -16,7 +16,7 @@ Following the [course](https://www.youtube.com/watch?v=hjD9jTi_DQ4&list=PLeiDFxc
 
 ### Install Hugo {#install-hugo}
 
-Easy for macos. Make sure that you have installed brew.
+Easy for Macos. Make sure that you have installed brew.
 
 ```bash
 brew install hugo
@@ -31,7 +31,7 @@ Be familiar with the commands of Hugo.
 hugo new site GrantSite
 ```
 
-Now you can open VSCode or Emacs to edit your own blogs. Use
+Now you can open VS Code or Emacs to edit your own blogs. Use
 
 ```bash
 hugo server
@@ -119,3 +119,24 @@ After that, you can see your website. For me, here's [it](https://grant-s-z.gith
 You need two packages: easy-hugo and ox-hugo.
 
 Just use Emacs to install them, and it is easy to manage your blogs now.
+
+Here are my settings:
+
+```emacs-lisp
+ ;; hugo
+(use-package easy-hugo
+  :init
+  (setq easy-hugo-basedir "~/Code/Site/GrantSite/") ;; 网站本地文件根目录
+  (setq easy-hugo-url "https://Grant-S-Z.github.io/GrantSite") ;; url 路径
+  (setq easy-hugo-sshdomain "Grant-S-Z.github.io")
+  (setq easy-hugo-previewtime "300")
+  (setq easy-hugo-default-ext ".org")
+  :bind ("C-c b" . easy-hugo))
+
+(use-package ox-hugo
+  :init
+  (setq org-hugo-base-dir "~/Code/Site/GrantSite/")
+  (setq org-hugo-section "post")
+  :config
+  (ox-hugo))
+```
