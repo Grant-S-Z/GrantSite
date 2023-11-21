@@ -1,13 +1,15 @@
 +++
 title = "Use plantuml in org"
 author = ["Grant"]
-lastmod = 2023-11-21T14:32:04+08:00
+lastmod = 2023-11-21T14:39:58+08:00
 tags = ["Emacs", "org", "plantuml"]
 categories = ["cs"]
 draft = false
 +++
 
 ## What is plantuml? {#what-is-plantuml}
+
+<https://plantuml.com/zh/>
 
 
 ## Plantuml samples in org {#plantuml-samples-in-org}
@@ -17,7 +19,7 @@ There are still many other samples waiting for my encounters.
 
 ### Sequence Diagram {#sequence-diagram}
 
-```plantuml
+```nil
 @startuml
 
 scale 2560*1600
@@ -56,7 +58,7 @@ miniMCA -> User:
 
 ### Module Diagram {#module-diagram}
 
-```plantuml
+```nil
 @startuml
 
 scale 2560*1600
