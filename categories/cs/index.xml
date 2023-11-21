@@ -6,16 +6,16 @@
     <description>Recent content in cs on Grant</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 23 Jun 2023 08:25:36 +0800</lastBuildDate><atom:link href="https://Grant-S-Z.github.io/GrantSite/categories/cs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 21 Nov 2023 14:12:38 +0800</lastBuildDate><atom:link href="https://Grant-S-Z.github.io/GrantSite/categories/cs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Build a blog</title>
       <link>https://Grant-S-Z.github.io/GrantSite/post/build-a-blog/</link>
-      <pubDate>Fri, 23 Jun 2023 08:25:36 +0800</pubDate>
+      <pubDate>Tue, 21 Nov 2023 14:12:38 +0800</pubDate>
       
       <guid>https://Grant-S-Z.github.io/GrantSite/post/build-a-blog/</guid>
       <description>How to build your own blog? I wanna build my own blog for a long time. Long ago, I have heard about Hugo, which is a convenient tool to build a static website quickly.
 Following the course of Youtube, I have probably finished it, and take a record for it now.
-Install Hugo Easy for macos. Make sure that you have installed brew.
+Install Hugo Easy for Macos. Make sure that you have installed brew.
 brew install hugo Create local website Be familiar with the commands of Hugo.</description>
     </item>
     
