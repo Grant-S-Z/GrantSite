@@ -6,7 +6,17 @@
     <description>Recent content on Grant</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Nov 2023 14:12:38 +0800</lastBuildDate><atom:link href="https://Grant-S-Z.github.io/GrantSite/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 21 Nov 2023 14:32:04 +0800</lastBuildDate><atom:link href="https://Grant-S-Z.github.io/GrantSite/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Use plantuml in org</title>
+      <link>https://Grant-S-Z.github.io/GrantSite/post/use-plantuml-in-org/</link>
+      <pubDate>Tue, 21 Nov 2023 14:32:04 +0800</pubDate>
+      
+      <guid>https://Grant-S-Z.github.io/GrantSite/post/use-plantuml-in-org/</guid>
+      <description>What is plantuml? Plantuml samples in org There are still many other samples waiting for my encounters.
+Sequence Diagram @startuml scale 2560*1600 title Sequence Diagram actor User box &amp;#34;Multichannel Spectrometer Program&amp;#34; #LightBlue participant miniMCA participant Usb participant ThdbDA participant ThdbAD participant PulseHeight participant Spectrum participant Ram == Before User == ThdbDA --&amp;gt; ThdbAD: Analog Signal DA_DA (AD_DA) ThdbAD --&amp;gt; PulseHeight: Digital Signal ad_data PulseHeight --&amp;gt; Spectrum: pulse_height and pulse_indicator == User Start == User -&amp;gt; miniMCA: miniMCA -&amp;gt; Usb: Start (usb_read_data) Usb -&amp;gt; Spectrum: cmd_start Spectrum -&amp;gt; Ram: address_a and data_a Ram -&amp;gt; Usb: address_b and q_b Usb -&amp;gt; miniMCA: usb_write_data miniMCA -&amp;gt; User: @enduml Module Diagram @startuml scale 2560*1600 title Module Diagram node final01 node ThdbDA node ThdbAD node PulseHeight node Spectrum node Usb node isp1362 node hex node ram node pll final01 -- ThdbDA final01 -- ThdbAD final01 -- PulseHeight final01 -- Spectrum final01 -- Usb final01 -- isp1362 final01 -- hex final01 -- ram final01 -- pll @enduml </description>
+    </item>
+    
     <item>
       <title>Build a blog</title>
       <link>https://Grant-S-Z.github.io/GrantSite/post/build-a-blog/</link>
