@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>test on Grant</title>
+    <link>https://Grant-S-Z.github.io/GrantSite/categories/test/</link>
+    <description>Recent content in test on Grant</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 08 Dec 2023 16:37:22 +0800</lastBuildDate><atom:link href="https://Grant-S-Z.github.io/GrantSite/categories/test/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test Chinese 中文？</title>
+      <link>https://Grant-S-Z.github.io/GrantSite/post/test-chinese/</link>
+      <pubDate>Fri, 08 Dec 2023 16:37:22 +0800</pubDate>
+      
+      <guid>https://Grant-S-Z.github.io/GrantSite/post/test-chinese/</guid>
+      <description>可以用中文么？ 没有改 language，作为一个测试。</description>
+    </item>
+    
+  </channel>
+</rss>

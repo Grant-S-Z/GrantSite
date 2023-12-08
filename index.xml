@@ -6,7 +6,16 @@
     <description>Recent content on Grant</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 27 Nov 2023 19:59:57 +0800</lastBuildDate><atom:link href="https://Grant-S-Z.github.io/GrantSite/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 08 Dec 2023 16:37:22 +0800</lastBuildDate><atom:link href="https://Grant-S-Z.github.io/GrantSite/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test Chinese 中文？</title>
+      <link>https://Grant-S-Z.github.io/GrantSite/post/test-chinese/</link>
+      <pubDate>Fri, 08 Dec 2023 16:37:22 +0800</pubDate>
+      
+      <guid>https://Grant-S-Z.github.io/GrantSite/post/test-chinese/</guid>
+      <description>可以用中文么？ 没有改 language，作为一个测试。</description>
+    </item>
+    
     <item>
       <title>Diary 2023-11-26</title>
       <link>https://Grant-S-Z.github.io/GrantSite/post/diary-2023-11-26/</link>
