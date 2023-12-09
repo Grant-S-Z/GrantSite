@@ -9,3 +9,5 @@ draft = false
 ## 可以用中文么？ {#可以用中文么}
 
 没有改 language，作为一个测试。
+
+Seems good.
