@@ -1,7 +1,7 @@
 +++
 title = "Emacs 二三事"
 author = ["Grant"]
-lastmod = 2023-12-23T23:22:49+08:00
+lastmod = 2023-12-24T00:05:27+08:00
 tags = ["Emacs"]
 categories = ["cs"]
 draft = false
@@ -20,7 +20,7 @@ brew install emacs-mac
 
 由于 Emacs 安装时参数对使用有影响，下面陈述一些参数的作用：
 
--   --with-modules
+-   `--with-modules`
 
     支持动态模块。使用 Emacs rime 等功能时需要启用。
 
@@ -48,7 +48,7 @@ unzip rime-1.7.1-osx.zip -d ~/.emacs.d/librime
 rm -rf rime-1.7.1-osx.zip
 ```
 
-下面需要在 Emacs 上安装 Emacs-rime package. 我的配置如下：
+下面需要在 Emacs 上安装 rime. 我的配置如下：
 
 ```emacs-lisp
 (use-package rime ;; 输入法
@@ -77,3 +77,4 @@ rm -rf rime-1.7.1-osx.zip
 
     使用 brew 安装的 Emacs 位置与系统默认位置不一致，需要指定其头文件位置。
 -   rime-user-data-dir: Rime 配置位置。
+-   rime-commit1-forall: 在输入处显示首个备选项。
