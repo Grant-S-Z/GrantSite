@@ -165,16 +165,16 @@
     <p>安装 在 MacOS 上安装 Emacs：
 brew tap railwaycat/emacsmacport brew install emacs-mac 安装后 Emacs 位于路径 /opt/homebrew/opt/emacs-mac, 可以直接拖动 app 至程序坞。
 由于 Emacs 安装时参数对使用有影响，下面陈述一些参数的作用：
-–with-modules
+--with-modules
 支持动态模块。使用 Emacs rime 等功能时需要启用。
 常见问题记录 使用 Emacs 时遇到问题是很正常的，以下是我的一些记录，包括配置、问题与解决方式。
 Rime 首先需要安装并配置鼠须管：
 brew install --cask squirrel 配置方式可以参考帮助文档。我直接使用了雾凇拼音的安装脚本，对配置文件仅做些许改动。现在可以在 MacOS 上使用 Rime 输入法了。
 为了在 Emacs 上使用 Rime，需要下载编译好的 librime：
-curl -L -O https://github.com/rime/librime/releases/download/1.7.1/rime-1.7.1-osx.zip unzip rime-1.7.1-osx.zip -d ~/.emacs.d/librime rm -rf rime-1.7.1-osx.zip 下面需要在 Emacs 上安装 Emacs-rime package. 我的配置如下：
+curl -L -O https://github.com/rime/librime/releases/download/1.7.1/rime-1.7.1-osx.zip unzip rime-1.7.1-osx.zip -d ~/.emacs.d/librime rm -rf rime-1.7.1-osx.zip 下面需要在 Emacs 上安装 rime. 我的配置如下：
 (use-package rime ;; 输入法 :custom (default-input-method &#34;rime&#34;) (rime-librime-root &#34;~/....</p>
   </div>
-  <footer class="entry-footer"><span title='2023-12-23 23:22:49 +0800 +0800'>December 23, 2023</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Grant</footer>
+  <footer class="entry-footer"><span title='2023-12-24 00:05:27 +0800 +0800'>December 24, 2023</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Grant</footer>
   <a class="entry-link" aria-label="post link to Emacs 二三事" href="https://Grant-S-Z.github.io/GrantSite/post/emacs-%E4%BA%8C%E4%B8%89%E4%BA%8B/"></a>
 </article>
 
@@ -201,18 +201,6 @@ Seems good.</p>
   </div>
   <footer class="entry-footer"><span title='2023-12-08 16:37:22 +0800 +0800'>December 8, 2023</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Grant</footer>
   <a class="entry-link" aria-label="post link to Test Chinese 中文？" href="https://Grant-S-Z.github.io/GrantSite/post/test-chinese/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Diary 2023-11-26
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Things Start learning Nuclear Electronics in the afternoon.</p>
-  </div>
-  <footer class="entry-footer"><span title='2023-11-27 19:59:57 +0800 +0800'>November 27, 2023</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Grant</footer>
-  <a class="entry-link" aria-label="post link to Diary 2023-11-26" href="https://Grant-S-Z.github.io/GrantSite/post/diary-2023-11-26/"></a>
 </article>
 
 <article class="post-entry"> 
