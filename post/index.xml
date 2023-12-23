@@ -6,7 +6,26 @@
     <description>Recent content in Posts on Grant</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 09 Dec 2023 21:49:57 +0800</lastBuildDate><atom:link href="https://Grant-S-Z.github.io/GrantSite/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 23 Dec 2023 23:22:49 +0800</lastBuildDate><atom:link href="https://Grant-S-Z.github.io/GrantSite/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Emacs 二三事</title>
+      <link>https://Grant-S-Z.github.io/GrantSite/post/emacs-%E4%BA%8C%E4%B8%89%E4%BA%8B/</link>
+      <pubDate>Sat, 23 Dec 2023 23:22:49 +0800</pubDate>
+      
+      <guid>https://Grant-S-Z.github.io/GrantSite/post/emacs-%E4%BA%8C%E4%B8%89%E4%BA%8B/</guid>
+      <description>安装 在 MacOS 上安装 Emacs：
+brew tap railwaycat/emacsmacport brew install emacs-mac 安装后 Emacs 位于路径 /opt/homebrew/opt/emacs-mac, 可以直接拖动 app 至程序坞。
+由于 Emacs 安装时参数对使用有影响，下面陈述一些参数的作用：
+&amp;ndash;with-modules
+支持动态模块。使用 Emacs rime 等功能时需要启用。
+常见问题记录 使用 Emacs 时遇到问题是很正常的，以下是我的一些记录，包括配置、问题与解决方式。
+Rime 首先需要安装并配置鼠须管：
+brew install --cask squirrel 配置方式可以参考帮助文档。我直接使用了雾凇拼音的安装脚本，对配置文件仅做些许改动。现在可以在 MacOS 上使用 Rime 输入法了。
+为了在 Emacs 上使用 Rime，需要下载编译好的 librime：
+curl -L -O https://github.com/rime/librime/releases/download/1.7.1/rime-1.7.1-osx.zip unzip rime-1.7.1-osx.zip -d ~/.emacs.d/librime rm -rf rime-1.7.1-osx.zip 下面需要在 Emacs 上安装 Emacs-rime package. 我的配置如下：
+(use-package rime ;; 输入法 :custom (default-input-method &amp;#34;rime&amp;#34;) (rime-librime-root &amp;#34;~/.</description>
+    </item>
+    
     <item>
       <title>Diary 2023-12-9</title>
       <link>https://Grant-S-Z.github.io/GrantSite/post/diary-2023-12-9/</link>
