@@ -1,7 +1,7 @@
 +++
 title = "Emacs 二三事"
 author = ["Grant"]
-lastmod = 2023-12-24T00:05:27+08:00
+lastmod = 2023-12-24T04:24:21+08:00
 tags = ["Emacs"]
 categories = ["cs"]
 draft = false
@@ -77,4 +77,8 @@ rm -rf rime-1.7.1-osx.zip
 
     使用 brew 安装的 Emacs 位置与系统默认位置不一致，需要指定其头文件位置。
 -   rime-user-data-dir: Rime 配置位置。
+-   rime-show-candidate
+
+    选择输入法显示方式，我选择 posframe, 需要额外安装。
+
 -   rime-commit1-forall: 在输入处显示首个备选项。
