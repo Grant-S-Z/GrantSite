@@ -81,7 +81,7 @@ curl -L -O https://github.com/rime/librime/releases/download/1.7.1/rime-1.7.1-os
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://Grant-S-Z.github.io/GrantSite/post/emacs-%E4%BA%8C%E4%B8%89%E4%BA%8B/" /><meta property="article:section" content="post" />
 
-<meta property="article:modified_time" content="2023-12-24T00:05:27+08:00" />
+<meta property="article:modified_time" content="2023-12-24T04:24:21+08:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Emacs 二三事"/>
@@ -128,11 +128,11 @@ curl -L -O https://github.com/rime/librime/releases/download/1.7.1/rime-1.7.1-os
   "keywords": [
     "Emacs"
   ],
-  "articleBody": "安装 在 MacOS 上安装 Emacs：\nbrew tap railwaycat/emacsmacport brew install emacs-mac 安装后 Emacs 位于路径 /opt/homebrew/opt/emacs-mac, 可以直接拖动 app 至程序坞。\n由于 Emacs 安装时参数对使用有影响，下面陈述一些参数的作用：\n--with-modules\n支持动态模块。使用 Emacs rime 等功能时需要启用。\n常见问题记录 使用 Emacs 时遇到问题是很正常的，以下是我的一些记录，包括配置、问题与解决方式。\nRime 首先需要安装并配置鼠须管：\nbrew install --cask squirrel 配置方式可以参考帮助文档。我直接使用了雾凇拼音的安装脚本，对配置文件仅做些许改动。现在可以在 MacOS 上使用 Rime 输入法了。\n为了在 Emacs 上使用 Rime，需要下载编译好的 librime：\ncurl -L -O https://github.com/rime/librime/releases/download/1.7.1/rime-1.7.1-osx.zip unzip rime-1.7.1-osx.zip -d ~/.emacs.d/librime rm -rf rime-1.7.1-osx.zip 下面需要在 Emacs 上安装 rime. 我的配置如下：\n(use-package rime ;; 输入法 :custom (default-input-method \"rime\") (rime-librime-root \"~/.emacs.d/librime/dist\") (rime-emacs-module-header-root \"/opt/homebrew/opt/emacs-mac/include/\") (rime-user-data-dir \"~/Library/Rime/\") (rime-cursor \".\") (rime-show-candidate 'posframe) (rime-commit1-forall t) (rime-posframe-properties (list :internal-border-width 10 :font \"LXGW WenKai\" :color 'rime-default-face)) ;; 在 modeline 显示输入法指示标志 (mode-line-mule-info '((:eval (rime-lighter)))) ;; 在 minibuffer 使用后自动关闭输入法 (rime-deactivate-when-exit-minibuffer t)) 需要注意：\nrime-librime-root: librime/dist 位置。\nrime-emacs-module-header-root\n使用 brew 安装的 Emacs 位置与系统默认位置不一致，需要指定其头文件位置。\nrime-user-data-dir: Rime 配置位置。\nrime-commit1-forall: 在输入处显示首个备选项。\n",
-  "wordCount" : "118",
+  "articleBody": "安装 在 MacOS 上安装 Emacs：\nbrew tap railwaycat/emacsmacport brew install emacs-mac 安装后 Emacs 位于路径 /opt/homebrew/opt/emacs-mac, 可以直接拖动 app 至程序坞。\n由于 Emacs 安装时参数对使用有影响，下面陈述一些参数的作用：\n--with-modules\n支持动态模块。使用 Emacs rime 等功能时需要启用。\n常见问题记录 使用 Emacs 时遇到问题是很正常的，以下是我的一些记录，包括配置、问题与解决方式。\nRime 首先需要安装并配置鼠须管：\nbrew install --cask squirrel 配置方式可以参考帮助文档。我直接使用了雾凇拼音的安装脚本，对配置文件仅做些许改动。现在可以在 MacOS 上使用 Rime 输入法了。\n为了在 Emacs 上使用 Rime，需要下载编译好的 librime：\ncurl -L -O https://github.com/rime/librime/releases/download/1.7.1/rime-1.7.1-osx.zip unzip rime-1.7.1-osx.zip -d ~/.emacs.d/librime rm -rf rime-1.7.1-osx.zip 下面需要在 Emacs 上安装 rime. 我的配置如下：\n(use-package rime ;; 输入法 :custom (default-input-method \"rime\") (rime-librime-root \"~/.emacs.d/librime/dist\") (rime-emacs-module-header-root \"/opt/homebrew/opt/emacs-mac/include/\") (rime-user-data-dir \"~/Library/Rime/\") (rime-cursor \".\") (rime-show-candidate 'posframe) (rime-commit1-forall t) (rime-posframe-properties (list :internal-border-width 10 :font \"LXGW WenKai\" :color 'rime-default-face)) ;; 在 modeline 显示输入法指示标志 (mode-line-mule-info '((:eval (rime-lighter)))) ;; 在 minibuffer 使用后自动关闭输入法 (rime-deactivate-when-exit-minibuffer t)) 需要注意：\nrime-librime-root: librime/dist 位置。\nrime-emacs-module-header-root\n使用 brew 安装的 Emacs 位置与系统默认位置不一致，需要指定其头文件位置。\nrime-user-data-dir: Rime 配置位置。\nrime-show-candidate\n选择输入法显示方式，我选择 posframe, 需要额外安装。\nrime-commit1-forall: 在输入处显示首个备选项。\n",
+  "wordCount" : "122",
   "inLanguage": "en",
   "datePublished": "0001-01-01T00:00:00Z",
-  "dateModified": "2023-12-24T00:05:27+08:00",
+  "dateModified": "2023-12-24T04:24:21+08:00",
   "author":[{
     "@type": "Person",
     "name": "Grant"
@@ -214,7 +214,7 @@ curl -L -O https://github.com/rime/librime/releases/download/1.7.1/rime-1.7.1-os
     <h1 class="post-title">
       Emacs 二三事
     </h1>
-    <div class="post-meta"><span title='2023-12-24 00:05:27 +0800 +0800'>December 24, 2023</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Grant
+    <div class="post-meta"><span title='2023-12-24 04:24:21 +0800 +0800'>December 24, 2023</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Grant
 
 </div>
   </header> 
@@ -271,6 +271,10 @@ curl -L -O https://github.com/rime/librime/releases/download/1.7.1/rime-1.7.1-os
 <p>rime-user-data-dir: Rime 配置位置。</p>
 </li>
 <li>
+<p>rime-show-candidate</p>
+<p>选择输入法显示方式，我选择 posframe, 需要额外安装。</p>
+</li>
+<li>
 <p>rime-commit1-forall: 在输入处显示首个备选项。</p>
 </li>
 </ul>
@@ -283,10 +287,10 @@ curl -L -O https://github.com/rime/librime/releases/download/1.7.1/rime-1.7.1-os
       <li><a href="https://Grant-S-Z.github.io/GrantSite/tags/emacs/">Emacs</a></li>
     </ul>
 <nav class="paginav">
-  <a class="next" href="https://Grant-S-Z.github.io/GrantSite/post/diary-2023-12-9/">
+  <a class="next" href="https://Grant-S-Z.github.io/GrantSite/post/start-today/">
     <span class="title">Next »</span>
     <br>
-    <span>Diary 2023-12-9</span>
+    <span>Start Today</span>
   </a>
 </nav>
 
