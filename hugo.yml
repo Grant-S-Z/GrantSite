@@ -4,11 +4,14 @@ defaultContentLanguage: zh
 title: Grant
 
 # theme
-theme: hugo-PaperMod
+theme: PaperMod
 
+buildDrafts: false
+buildFuture: false
 enableEmoji: true
+enableRobotsTXT: true
 
-paginate: 10 # 每页显示文章数
+paginate: 8 # 每页显示文章数
 
 params:
     
