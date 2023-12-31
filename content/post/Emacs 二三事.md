@@ -11,7 +11,7 @@ draft = false
 
 在 MacOS 上安装 Emacs：
 
-```zsh
+```sh
 brew tap railwaycat/emacsmacport
 brew install emacs-mac
 ```
@@ -34,7 +34,7 @@ brew install emacs-mac
 
 首先需要安装并配置鼠须管：
 
-```zsh
+```sh
 brew install --cask squirrel
 ```
 
@@ -42,7 +42,7 @@ brew install --cask squirrel
 
 为了在 Emacs 上使用 Rime，需要下载编译好的 librime：
 
-```zsh
+```sh
 curl -L -O https://github.com/rime/librime/releases/download/1.7.1/rime-1.7.1-osx.zip
 unzip rime-1.7.1-osx.zip -d ~/.emacs.d/librime
 rm -rf rime-1.7.1-osx.zip
