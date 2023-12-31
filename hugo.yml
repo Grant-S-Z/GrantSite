@@ -23,6 +23,9 @@ params:
     ShowReadingTime: true
     ShowShareButtons: true
     ShowPostNavLinks: true
+    ShowWordCount: true
+    ShowCodeCopyButtons: false
+    
     ShowToc: true
     TocOpen: true
 
