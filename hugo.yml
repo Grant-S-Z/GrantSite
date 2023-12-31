@@ -4,7 +4,11 @@ defaultContentLanguage: zh
 title: Grant
 
 # theme
-theme: PaperMod
+theme: hugo-PaperMod
+
+enableEmoji: true
+
+paginate: 10 # 每页显示文章数
 
 params:
     
