@@ -1,9 +1,13 @@
 baseURL: 'https://Grant-S-Z.github.io/GrantSite/'
 languageCode: en-us
+defaultContentLanguage: zh
 title: Grant
+
+# theme
 theme: PaperMod
 
 params:
+    
     homeInfoParams:
         Title: 'Welcome'
         Content: 'True mastery of any skill takes a lifetime.'
@@ -19,6 +23,8 @@ params:
     ShowReadingTime: true
     ShowShareButtons: true
     ShowPostNavLinks: true
+    ShowToc: true
+    TocOpen: true
 
 menu:
     main:
