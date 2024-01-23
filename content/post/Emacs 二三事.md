@@ -1,7 +1,7 @@
 +++
 title = "Emacs 二三事"
 author = ["Grant"]
-lastmod = 2024-01-23T20:24:18+08:00
+lastmod = 2024-01-23T20:43:01+08:00
 tags = ["Emacs"]
 categories = ["cs"]
 draft = false
@@ -72,13 +72,13 @@ rm -rf rime-1.7.1-osx.zip
 
 需要注意：
 
--   rime-librime-root: `librime/dist` 位置。
--   rime-emacs-module-header-root
+-   `rime-librime-root`: `librime/dist` 位置。
+-   `rime-emacs-module-header-root`
 
     使用 brew 安装的 Emacs 位置与系统默认位置不一致，需要指定其头文件位置。
--   rime-user-data-dir: Rime 配置位置。
--   rime-show-candidate
+-   `rime-user-data-dir`: Rime 配置位置。
+-   `rime-show-candidate`
 
     选择输入法显示方式，我选择 posframe, 需要额外安装。
 
--   rime-commit1-forall: 在输入处显示首个备选项。
+-   `rime-commit1-forall`: 在输入处显示首个备选项。
