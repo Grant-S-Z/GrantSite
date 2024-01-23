@@ -11,6 +11,8 @@ buildFuture: false
 enableEmoji: true
 enableRobotsTXT: true
 
+enableInlineShortcodes: true
+
 paginate: 8 # 每页显示文章数
 
 params:
@@ -26,6 +28,7 @@ params:
     cover:
         linkFullImages: true
 
+    author: Grant
     ShowBreadCrumbs: true
     ShowReadingTime: true
     ShowShareButtons: false
@@ -35,6 +38,7 @@ params:
     
     ShowToc: true
     TocOpen: true
+    math: true
 
 menu:
     main:
