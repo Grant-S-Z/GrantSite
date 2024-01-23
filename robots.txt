@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://Grant-S-Z.github.io/GrantSite/sitemap.xml
