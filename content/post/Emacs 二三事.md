@@ -1,7 +1,7 @@
 +++
 title = "Emacs 二三事"
-author = ["Grant"]
-lastmod = 2023-12-24T04:24:21+08:00
+author = ["Yutao Zhu"]
+lastmod = 2024-01-23T10:55:39+08:00
 tags = ["Emacs"]
 categories = ["cs"]
 draft = false
@@ -11,7 +11,7 @@ draft = false
 
 在 MacOS 上安装 Emacs：
 
-```sh
+```bash
 brew tap railwaycat/emacsmacport
 brew install emacs-mac
 ```
@@ -34,7 +34,7 @@ brew install emacs-mac
 
 首先需要安装并配置鼠须管：
 
-```sh
+```bash
 brew install --cask squirrel
 ```
 
@@ -42,7 +42,7 @@ brew install --cask squirrel
 
 为了在 Emacs 上使用 Rime，需要下载编译好的 librime：
 
-```sh
+```bash
 curl -L -O https://github.com/rime/librime/releases/download/1.7.1/rime-1.7.1-osx.zip
 unzip rime-1.7.1-osx.zip -d ~/.emacs.d/librime
 rm -rf rime-1.7.1-osx.zip
@@ -50,7 +50,7 @@ rm -rf rime-1.7.1-osx.zip
 
 下面需要在 Emacs 上安装 rime. 我的配置如下：
 
-```emacs-lisp
+```bash
 (use-package rime ;; 输入法
   :custom
   (default-input-method "rime")
@@ -72,7 +72,7 @@ rm -rf rime-1.7.1-osx.zip
 
 需要注意：
 
--   rime-librime-root: `librime/dist` 位置。
+-   rime-librime-root: \`librime/dist\` 位置。
 -   rime-emacs-module-header-root
 
     使用 brew 安装的 Emacs 位置与系统默认位置不一致，需要指定其头文件位置。
