@@ -28,10 +28,10 @@ params:
 
     ShowBreadCrumbs: true
     ShowReadingTime: true
-    ShowShareButtons: true
+    ShowShareButtons: false
     ShowPostNavLinks: true
     ShowWordCount: true
-    ShowCodeCopyButtons: false
+    ShowCodeCopyButtons: true
     
     ShowToc: true
     TocOpen: true
