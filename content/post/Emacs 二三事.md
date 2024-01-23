@@ -1,7 +1,7 @@
 +++
 title = "Emacs 二三事"
-author = ["Yutao Zhu"]
-lastmod = 2024-01-23T13:35:54+08:00
+author = ["Grant"]
+lastmod = 2024-01-23T20:24:18+08:00
 tags = ["Emacs"]
 categories = ["cs"]
 draft = false
