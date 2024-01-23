@@ -1,7 +1,7 @@
 +++
 title = "Emacs 二三事"
 author = ["Yutao Zhu"]
-lastmod = 2024-01-23T10:55:39+08:00
+lastmod = 2024-01-23T13:35:54+08:00
 tags = ["Emacs"]
 categories = ["cs"]
 draft = false
@@ -50,7 +50,7 @@ rm -rf rime-1.7.1-osx.zip
 
 下面需要在 Emacs 上安装 rime. 我的配置如下：
 
-```bash
+```elisp
 (use-package rime ;; 输入法
   :custom
   (default-input-method "rime")
@@ -72,7 +72,7 @@ rm -rf rime-1.7.1-osx.zip
 
 需要注意：
 
--   rime-librime-root: \`librime/dist\` 位置。
+-   rime-librime-root: `librime/dist` 位置。
 -   rime-emacs-module-header-root
 
     使用 brew 安装的 Emacs 位置与系统默认位置不一致，需要指定其头文件位置。
