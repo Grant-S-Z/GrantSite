@@ -69,46 +69,41 @@ git push -u origin main
 After creating it, to make github do the jobs automatically, you need to establish the workflow. First of all, you should go to the repo actions and change the workflow permissions into "Read and write permissions". Then, add a .github/workflows/deploy.yml file under the project root directory like this.
 
 ```nil
-name: Publish to GH Pages
+name: GitHub Pages
+
 on:
   push:
     branches:
-      - main
+      - main  # Set a branch to deploy
   pull_request:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
     steps:
-      - name: Checkout source
-	uses: actions/checkout@v3
-	with:
-	  submodules: true
-
-      - name: Checkout destination
-	uses: actions/checkout@v3
-	if: github.ref == 'refs/heads/main'
-	with:
-	  ref: gh-pages
-	  path: built-site
+      - uses: actions/checkout@v4
+        with:
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
       - name: Setup Hugo
-	run: |
-	  curl -L -o /tmp/hugo.tar.gz 'https://github.com/gohugoio/hugo/releases/download/v0.110.0/hugo_extended_0.110.0_linux-amd64.tar.gz'
-	  tar -C ${RUNNER_TEMP} -zxvf /tmp/hugo.tar.gz hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          # extended: true
+
       - name: Build
-	run: ${RUNNER_TEMP}/hugo
+        run: hugo --minify
 
       - name: Deploy
-	if: github.ref == 'refs/heads/main'
-	run: |
-	  cp -R public/* ${GITHUB_WORKSPACE}/built-site/
-	  cd ${GITHUB_WORKSPACE}/built-site
-	  git add .
-	  git config user.name 'dhij'
-	  git config user.email 'davidhwang.ij@gmail.com'
-	  git commit -m 'Updated site'
-	  git push
+        uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/main'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+
 ```
 
 After that, you can see your website. For me, here's [it](https://grant-s-z.github.io/GrantSite/).
